@@ -5,7 +5,9 @@ import sys
 
 
 def get_bank_acc():
-    """Request for bank account details with verification"""
+    """
+    Request for bank account details with verification
+    """
     while True:
         s_b_a = input("Enter the sender's bank account: ")
         if len(s_b_a) != 20 or s_b_a.isdigit() is False:
@@ -30,7 +32,9 @@ def get_bank_acc():
 
 
 def display_acc(accounts):
-    """"Display of entered bank accounts"""
+    """"
+    Display of entered bank accounts
+    """
     if accounts:
         line = '+-{}-+-{}-+-{}-+-{}-+'.format(
             '-' * 2,
@@ -64,7 +68,9 @@ def display_acc(accounts):
 
 
 def sum_check(requisites, account):
-    """"Amount of all money withdrawn"""
+    """"
+    Amount of all money withdrawn
+    """
     full_summa = 0
     for sender_req in requisites:
 
@@ -94,7 +100,9 @@ def invalid_com():
 
 
 def main():
-    """Main function"""
+    """
+    Main function
+    """
     requisites = []
     while True:
 
