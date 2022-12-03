@@ -9,8 +9,8 @@ def multiply():
             f_num *= n_num
         else:
             break
-    print(f_num)
+    return f_num
 
 
 if __name__ == "__main__":
-    multiply()
+    print(f"The product of all the numbers entered before '0': {multiply()}")
